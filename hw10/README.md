@@ -12,3 +12,11 @@
 
 - таблица товаров  
 поле characteristics - разные характеристики товара в зависимости от категории (диагональ, тип дисплея, процессов и т.д.) 
+
+#### Запросы
+
+Запросы на вставку данных есть в скрипте инициализации - добавление тестовых данных  
+[init.sql](https://github.com/elisad5791/otus-mysql/blob/main/hw10/init.sql)
+
+Запросы на выборку данных  
+[queries.sql](https://github.com/elisad5791/otus-mysql/blob/main/hw10/queries.sql)
