@@ -70,7 +70,7 @@ FROM purchases p
 LEFT JOIN customers c ON c.id = p.customer_id
 LEFT JOIN purchase_items pi ON pi.purchase_id = p.id
 LEFT JOIN products pr ON pr.id = pi.product_id
-WHERE purchase_id = 1;
+WHERE p.id = 1;
 
 -- анализ покупок по товарам
 SELECT
