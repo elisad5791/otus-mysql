@@ -27,6 +27,6 @@ FOREIGN KEY
 
 ### Индексы
 
-[Возможные запросы]()
+[Возможные запросы](https://github.com/elisad5791/otus-mysql/blob/main/hw2/queries.sql)
 
-[Индексы]()
+[Индексы](https://github.com/elisad5791/otus-mysql/blob/main/hw2/indexes.sql)

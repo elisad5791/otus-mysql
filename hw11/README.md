@@ -1,15 +1,15 @@
 # SQL выборка
 
 ## Задание 1
-[Файл с запросами на INNER JOIN, LEFT JOIN, WHERE]()
+[Файл с запросами на INNER JOIN, LEFT JOIN, WHERE](https://github.com/elisad5791/otus-mysql/blob/main/hw11/queries.sql)
 
 ## Задание 2
 
-[Файл с доработанными скриптами создания таблиц]()
+[Файл с доработанными скриптами создания таблиц](https://github.com/elisad5791/otus-mysql/blob/main/hw11/extra_tables.sql)
 
 Они также добавлены в скрипт init.sql
 
-[Процедуры]()
+[Процедуры](https://github.com/elisad5791/otus-mysql/blob/main/hw11/procedures.sql)
 
 1. **Заполнение таблиц данными**  
 Заполнение таблиц выполнялось через консольный клиент (около 7 мин)  
@@ -21,4 +21,4 @@ SET SESSION net_write_timeout = 3600;
 2. **Постраничная выдача товаров**
 
 Создан индекс для эффективной выдачи
-[index.sql]()
+[index.sql](https://github.com/elisad5791/otus-mysql/blob/main/hw11/index.sql)
