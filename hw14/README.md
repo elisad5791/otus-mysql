@@ -1,10 +1,10 @@
 # Индексы
 
 Из прошлых ДЗ собраны запросы, которые составляют основу системы  
-[queries.sql]()
+[queries.sql](https://github.com/elisad5791/otus-mysql/blob/main/hw14/queries.sql)
 
 Добавлен полнотекстовый индекс и обычные индексы.  
-[indexes.sql]()
+[indexes.sql](https://github.com/elisad5791/otus-mysql/blob/main/hw14/indexes.sql)
 
 Ниже анализ двух запросов с индексами и без них
 
