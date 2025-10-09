@@ -1,8 +1,8 @@
 # Анализ и профилирование запроса
 
-[Запрос для анализа]()
+[Запрос для анализа](https://github.com/elisad5791/otus-mysql/blob/main/hw17/query.sql)
 
-[Процедура генерации тестовых данных]()
+[Процедура генерации тестовых данных](https://github.com/elisad5791/otus-mysql/blob/main/hw17/procedure.sql)
 
 ### План выполнения в трех форматах - обычный, json, tree
 
