@@ -21,4 +21,4 @@ INSERT INTO users (name) VALUES ('Alice'), ('Bob');
 
 ### Скриншоты
 
-[Папка со скриншотами]()
+[Папка со скриншотами](https://github.com/elisad5791/otus-mysql/tree/main/hw3/screenshots)
