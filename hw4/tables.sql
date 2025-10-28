@@ -1,3 +1,5 @@
+SET default_tablespace = 'tspace_fast';
+
 -- категории
 CREATE TABLE core.categories (
     id SERIAL PRIMARY KEY,
@@ -64,6 +66,8 @@ CREATE TABLE core.purchase_items (
 -----------------------------------------------------------------
 -----------------------------------------------------------------
 
+SET default_tablespace = 'tspace_slow';
+
 -- производители
 CREATE TABLE ref.producers (
     id SERIAL PRIMARY KEY,
@@ -98,6 +102,8 @@ CREATE TABLE ref.emails (
     FOREIGN KEY (supplier_id) REFERENCES ref.suppliers(id),
     FOREIGN KEY (customer_id) REFERENCES core.customers(id)
 );
+
+RESET default_tablespace;
 
 ---------------------------------------------------------------------------
 ---------------------------------------------------------------------------

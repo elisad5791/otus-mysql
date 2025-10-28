@@ -3,6 +3,8 @@
 -- полные права на базу otus
 CREATE ROLE otus_admin;
 GRANT ALL PRIVILEGES ON DATABASE otus TO otus_admin;
+GRANT USAGE ON SCHEMA core, ref TO otus_admin;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA core, ref TO otus_admin;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA core, ref TO otus_admin;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA core, ref TO otus_admin;
 GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA core, ref TO otus_admin;
@@ -12,6 +14,7 @@ GRANT ALL PRIVILEGES ON ALL PROCEDURES IN SCHEMA core, ref TO otus_admin;
 CREATE ROLE otus_reader;
 GRANT CONNECT ON DATABASE otus TO otus_reader;
 GRANT USAGE ON SCHEMA core, ref TO otus_reader;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA core, ref TO otus_reader;
 GRANT SELECT ON ALL TABLES IN SCHEMA core, ref TO otus_reader;
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA core, ref TO otus_reader;
 
