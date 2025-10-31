@@ -1,11 +1,11 @@
 # DML в PostgreSQL
 
-[Создание таблиц]()
+[Создание таблиц](https://github.com/elisad5791/otus-mysql/blob/main/hw5/tables.sql)
 
-[Данные]()
+[Данные](https://github.com/elisad5791/otus-mysql/blob/main/hw5/data.sql)
 
-[Запросы]()
+[Запросы](https://github.com/elisad5791/otus-mysql/blob/main/hw5/queries.sql)
 
-[Данные для команды copy]()
+[Данные для команды copy](https://github.com/elisad5791/otus-mysql/blob/main/hw5/prices_data.csv)
 
-[Использование команды copy]()
+[Использование команды copy](https://github.com/elisad5791/otus-mysql/blob/main/hw5/copy.sql)
