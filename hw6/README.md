@@ -1,10 +1,10 @@
 # Индексы PostgreSQL
 
-[Таблицы]()
+[Таблицы](https://github.com/elisad5791/otus-mysql/blob/main/hw6/tables.sql)
 
-[Данные]()
+[Данные](https://github.com/elisad5791/otus-mysql/blob/main/hw6/data.sql)
 
-[Индексы]()
+[Индексы](https://github.com/elisad5791/otus-mysql/blob/main/hw6/indexes.sql)
 
 ### Проблемы
 
