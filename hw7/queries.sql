@@ -16,4 +16,5 @@ SELECT * FROM cte ORDER BY year_game;
 SELECT 
     player_name, 
     year_game, points AS current_year_points, 
-    LAG(points) OVER (PARTITION BY player_name ORDER BY year_game) AS previous_year_points;
+    LAG(points) OVER (PARTITION BY player_name ORDER BY year_game) AS previous_year_points
+FROM statistic;

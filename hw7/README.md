@@ -1,5 +1,5 @@
 # Посчитать кол-во очков по всем игрокам за текущий год и за предыдущий
 
-[Таблица]()
+[Таблица](https://github.com/elisad5791/otus-mysql/blob/main/hw7/table.sql)
 
-[Запросы]()
+[Запросы](https://github.com/elisad5791/otus-mysql/blob/main/hw7/queries.sql)
