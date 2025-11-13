@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+until pg_isready -h postgres-master -p 5432 -U postgres; do
+  echo "Waiting for master to be ready..."
+  sleep 2
+done
+
+sleep 5
+
 pg_ctl -D "$PGDATA" -m fast -w stop
 rm -rf "$PGDATA"/*
 PGPASSWORD=replicator_password pg_basebackup -h postgres-master -D "$PGDATA" -U replicator -P -S physical_slot -X stream -R
