@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  mysql-node-1:
+    image: mysql:8.0
+    container_name: mysql-node-1
+    hostname: 172.20.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+    networks:
+      mysql-cluster-net:
+        ipv4_address: 172.20.0.2
+    volumes:
+      - mysql_node_1_data:/var/lib/mysql
+      - ./config/my.cnf.1:/etc/mysql/conf.d/my.cnf
+      - ./config/init-users.sql:/docker-entrypoint-initdb.d/init-users.sql
+    restart: unless-stopped
+
+  mysql-node-2:
+    image: mysql:8.0
+    container_name: mysql-node-2
+    hostname: 172.20.0.3
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+    networks:
+      mysql-cluster-net:
+        ipv4_address: 172.20.0.3
+    volumes:
+      - mysql_node_2_data:/var/lib/mysql
+      - ./config/my.cnf.2:/etc/mysql/conf.d/my.cnf
+      - ./config/init-users.sql:/docker-entrypoint-initdb.d/init-users.sql
+    restart: unless-stopped
+
+  mysql-node-3:
+    image: mysql:8.0
+    container_name: mysql-node-3
+    hostname: 172.20.0.4
+    environment:
+      MYSQL_ROOT_PASSWORD: "rootpassword"
+    networks:
+      mysql-cluster-net:
+        ipv4_address: 172.20.0.4
+    volumes:
+      - mysql_node_3_data:/var/lib/mysql
+      - ./config/my.cnf.3:/etc/mysql/conf.d/my.cnf
+      - ./config/init-users.sql:/docker-entrypoint-initdb.d/init-users.sql
+    restart: unless-stopped
+
+volumes:
+  mysql_node_1_data:
+  mysql_node_2_data:
+  mysql_node_3_data:
+
+networks:
+  mysql-cluster-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24

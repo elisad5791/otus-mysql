@@ -1,0 +1,8 @@
+CREATE USER 'repl'@'%' IDENTIFIED BY 'replpassword';
+GRANT REPLICATION SLAVE ON *.* TO 'repl'@'%';
+GRANT CONNECTION_ADMIN ON *.* TO 'repl'@'%';
+
+CREATE USER 'cluster'@'%' IDENTIFIED BY 'clusterpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'cluster'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
